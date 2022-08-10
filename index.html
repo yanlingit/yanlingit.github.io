@@ -165,8 +165,35 @@
             </div>
          </section>
          <section class="date pt-150 pb-150 overlay">
-            <div class="background-img">
-               <img src="picture/4.jpg" alt="">
+<!--             <div class="background-img"> -->
+		    
+		    
+		    <body>
+			<p>图片轮播</p>
+			<div class="imgBox">
+			    <img class="img-slide img1" src="images/1.jpg" alt="1">
+			    <img class="img-slide img2" src="images/2.jpg" alt="2">
+			    <img class="img-slide img3" src="images/3.jpg" alt="3">
+			</div>
+			</body>
+			<script type="text/javascript">
+			    var index=0;
+			    //效果
+			    function ChangeImg() {
+				index++;
+				var a=document.getElementsByClassName("img-slide");
+				if(index>=a.length) index=0;
+				for(var i=0;i<a.length;i++){
+				    a[i].style.display='none';
+				}
+				a[index].style.display='block';
+			    }
+			    //设置定时器，每隔两秒切换一张图片
+			    setInterval(ChangeImg,3000);
+			</script>
+		    
+		    
+<!--                <img src="picture/beijing.jpg" alt=""> -->
             </div>
             <div class="container">
                <div class="row">
@@ -429,7 +456,7 @@
    </body>
 </html>
 <div class="footer-item"><center>邮箱：<a href="mailto:Simplemxc@163.com">Simplemxc@163.com</center></a></div>
-<div class="footer-item"><center>官网地址 ：<a href="www.yanling.ink">www.yanling.ink</center></a></div>
+<div class="footer-item"><center>官网地址 ：<a href="https://yanlingit.github.io/">https://yanlingit.github.io/</center></a></div>
 <div class="footer-item"><center>创建时间 ：2021年5月20日</center></div>
 <div class="footer-item"><center>燕麟的云家 &nbsp;©2021&nbsp; <a target="_blank" href="https://beian.miit.gov.cn/">粤ICP备2021044569号</center></a></div>
 </html>
